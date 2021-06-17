@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+}
+
+.about {
+    font-family: 'Benne';
+    color:white;
+    padding-left: 200px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: normal;
+}
+
+p {
+    font-size: 20px;
+    margin-right: 200px;
+    text-align: justify;
+}

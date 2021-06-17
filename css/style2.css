@@ -20,9 +20,9 @@ h1 {
     color: white;
     font-family:'Benne';
     font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 30px;
-    line-height: 50px;
+    line-height: 70px;
     background: #596d77;
     text-align: center;
     letter-spacing: 7px;
@@ -51,10 +51,11 @@ h1 {
     font-size: 20px;
     height: 30px;
     left: 225px;
-    top: 352px;
+    top: 360px;
     background: #596d77;
-    line-height: 32px;
+    line-height: 36px;
     font-family: 'Benne';
+    font-weight: normal;
 }
 
 main {
@@ -64,7 +65,7 @@ main {
 }
 
 .lists {
-    color: rgb(4, 39, 14);
+    color: rgb(1, 20, 7);
     font-size: 24px;
     font-family:'Benne';
 }
@@ -106,13 +107,14 @@ footer{
 }
 
 #about {
-    color: rgb(128, 9, 5);
+    color: rgb(173, 11, 6);
     letter-spacing: 5px;
-    width: 1041px;
-    font-size: 15px;
+    width: 200px;
+    font-size:25px;
     height: 10px;
-    left: 225px;
-    top: 352px;
+    left: 800px;
     background: #596d77;
-    line-height: 10px;
+    line-height: 4px;
+    position:absolute;
+    top: 365px;
 }
