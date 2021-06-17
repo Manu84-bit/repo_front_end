@@ -1,0 +1,118 @@
+html {  
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: black;
+}
+
+body{
+    background-color: white;
+}
+
+header {
+   
+    background: black;  
+}
+
+
+
+h1 {
+    color: white;
+    font-family:'Benne';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 50px;
+    background: #596d77;
+    text-align: center;
+    letter-spacing: 7px;
+}
+
+#logo {
+    display: block;
+    margin: auto;
+    width: 140px;
+    height: 120px;
+    left: 670px;
+    top: 30px;
+    margin-top: 21px;
+    border-radius: 50%;
+    
+}
+
+#primer-sub {
+    margin-top: 119px;
+}
+
+.title {
+    color: white;
+    letter-spacing: 5px;
+    width: 1041px;
+    font-size: 20px;
+    height: 30px;
+    left: 225px;
+    top: 352px;
+    background: #596d77;
+    line-height: 32px;
+    font-family: 'Benne';
+}
+
+main {
+    margin-left: 225px;
+    
+    
+}
+
+.lists {
+    color: rgb(4, 39, 14);
+    font-size: 24px;
+    font-family:'Benne';
+}
+
+span {
+    font-family:'Benne';
+    font-style: italic;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 84.69%;
+}
+
+footer{
+    margin-top:180px;
+    background: #596d77;
+}
+#footer-text{
+    background: #596d77;
+    font-family:'Benne';
+    color:white;
+    font-size: 20px;
+    line-height: 10px;
+    margin-left: 601px;
+    letter-spacing: 2px;
+    font-style: normal;
+    padding-bottom: 35px;
+}
+
+.tab {
+    padding-left: 118px;
+  }
+
+.gitHub {
+    width: 50px;
+    height: 38px;
+    margin-top: 20px;
+    position:relative;
+    top:12px;
+}
+
+#about {
+    color: rgb(128, 9, 5);
+    letter-spacing: 5px;
+    width: 1041px;
+    font-size: 15px;
+    height: 10px;
+    left: 225px;
+    top: 352px;
+    background: #596d77;
+    line-height: 10px;
+}

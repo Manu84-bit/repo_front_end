@@ -29,8 +29,8 @@ h1 {
 #logo {
     display: block;
     margin: auto;
-    width: 100px;
-    height: 140px;
+    width: 130px;
+    height: 150px;
     left: 670px;
     top: 30px;
     margin-top: 21px;
@@ -54,7 +54,6 @@ h1 {
 
 main {
     margin-left: 225px;
-    
     
 }
 
@@ -84,3 +83,4 @@ footer{
 .tab {
     padding-left: 82px;
   }
+
