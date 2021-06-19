@@ -1,0 +1,126 @@
+.black{
+    background-color: black;
+    color:white;
+    width: 1025px;
+}
+
+.color-header {
+    color: white;
+}
+
+.yellow {
+    background-color:  #F0A83E;
+    width: 1025px;
+}
+
+.central-image{
+    background-image: url('../img/bowl-and-pet-daities-on-green-background\ 1.png');
+    width: 1025px;
+    height: 424px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.font-main {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 47px;
+    /* identical to box height */
+    color: #3C2313;
+    text-align: center;
+    width: 1025px;
+}
+
+#sale{
+    position: relative;
+    width: 500px;
+    top: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    text-align: center;
+    margin: auto;
+    color: #3C2313;
+}
+
+#eater{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    font-size: 16px;
+    line-height: 19px;
+/* identical to box height */
+    text-align: center;
+    background-color: #F0A83E;
+    margin: auto;
+    position: relative;
+    width: 141px;
+    height: 20px;
+    top: 20px;
+    border-radius: 5px;
+}
+
+.brown{
+    width: 1024px;
+    height: 365px;
+    bottom: 10px;
+    background: #3C2313;
+ 
+}
+
+.center{
+    text-align: center;
+}
+
+span.f-bold{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: white;
+}
+
+span.grey{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 12px;
+/* identical to box height */
+    color: #8A8787;
+}
+
+.prices{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2px;
+    color: #F0A83E;
+}
+
+.productos {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #3C2313;
+}
+
+.center {
+    text-align: center;
+    width: 1025px;
+}
+
+#paw{
+    text-align: center;
+    margin: auto;
+}
