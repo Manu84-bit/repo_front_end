@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    }
+
+main {
+    display: flex;/* display: flex por defecto
+                distribuye a los hijos rizontalmente(row) a los hijos. 
+                con flex-direction se modifica  */
+    width: 1500px;
+    height: 1500px;
+    border: solid blue 3px;
+    justify-content: space-around; /*el valor por defecto es start*/
+    align-items: center; /* mueve hijos a lo largo del eje opuesto a flex-direction:*/
+    flex-wrap: wrap; /* respeta las medidas de los hijos y deja en otra línea los que no quepan */
+    /*align-content: center; cuando hay elementos en más de una fila*/
+    }
+
+.caja {
+ width: 250px;
+ height: 250px;
+ border: solid red 5px;
+ margin: 5px;
+ font-size: 30px;
+}
+
+.uno{
+    order: 1;
+    flex-grow: 1;/*prioriza espacio ocupado 
+    por un elemente*/
+    align-self: flex-end
+}
+
+.dos {
+    order: 0; /* por defecto, todo es cero, menor número está primero */
+    align-self: center;
+}
+
+.tres {
+    order:2;
+}
