@@ -51,6 +51,7 @@ main {
     width: 491px;
     height: 350px;
     border-radius: 5px;
+    margin: 3px;
 }
 
 .podium {
@@ -58,9 +59,11 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     padding-top: 26px;
     padding-bottom: 60px;
+    padding-left: 71px;
+    padding-right: 74px;
 }
 
 .delivery {
@@ -83,11 +86,18 @@ h2 {
 #content-podium {
     display: flex;
     justify-content:space-between;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    
+}
+
+#pizzas li {
+    line-height: 20px;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 26px;
 }
 
 footer {
@@ -113,4 +123,21 @@ footer {
 #logo-footer {
     width: 212px;
 
+}
+
+#p-falling {
+    width: 92px;
+    height: 129px;
+    position: relative;
+    top: 15px;
+}
+
+.center {
+    text-align: center;
+}
+
+#margin {
+    position: relative;
+    padding-left:19px;
+    padding-top: 20px;
 }
