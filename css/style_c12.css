@@ -59,9 +59,21 @@ body {
 
 }
 
+#plesure {
+    background: white;
+    padding: 10px;
+    font-weight: normal;
+    border-radius: 5px;
+}
+
+#discount {
+    font-weight: normal;
+}
+
 .button1 {
     width: 141px;
     height: 49px;
+    font-size: 16px;
     border-radius: 5px;
     border-color:#F0A83E;
 }
@@ -70,6 +82,13 @@ main {
     height: 800px;
 }
 
+.grey-f {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #666666;
+}
 
 .products {
     display: flex;
@@ -147,3 +166,6 @@ main {
 
 }
 
+.form1 {
+    padding-top: 50px;
+}
