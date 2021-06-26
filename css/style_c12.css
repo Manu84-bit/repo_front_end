@@ -169,3 +169,9 @@ main {
 .form1 {
     padding-top: 50px;
 }
+
+.small-f{
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+}
