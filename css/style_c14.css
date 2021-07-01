@@ -6,14 +6,19 @@
 }
 
 html {
-    font-size: 88%;
+    font-size: 89%;
     font-family: 'Roboto';
     margin: 0 auto;
 }
 header {
-    width: 300px;
+    width: 410px;
     padding-left: 2rem;
 
+}
+
+body {
+    width: 410px;
+    margin: 0 auto;
 }
 
 main {
@@ -86,7 +91,7 @@ main {
 }
 
 .content p {
-    padding: 1rem;
+    padding: 1.2rem;
     
 }
 
@@ -102,8 +107,8 @@ main {
     font-size: 48px;
     display: inline;
     color: #00669F;  
-    margin-left: 85%;
+    margin-left: 75%;
     position:absolute;
-    top: 300px;
+    top: 260px;
     position: fixed;
 }
