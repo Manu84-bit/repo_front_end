@@ -1,43 +1,109 @@
 * {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
     border: 0;
+    margin: 0;
 }
+
 html {
-    font-size: 60%;
+    font-size: 88%;
+    font-family: 'Roboto';
+    margin: 0 auto;
 }
-body {
-    width: 100%;  
+header {
+    width: 300px;
+    padding-left: 2rem;
+
 }
 
 main {
-    width: 200px;
-    margin-left: 30%;
-    margin-right: 28%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Roboto';
+    width: 300px;
+    margin: 0 auto;
+}
+
+
+.card{
+    width: 300px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+    border-radius: 27px 27px 0px 0px;
+    margin-bottom: 15%;
+
+
 }
 
 .bg {
-    width: 200px;
-    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 184px;
+    background-size: contain;
+    border-radius: 27px 27px 0px 0px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-.profile {
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
+
+   
 }
 
-.content {
-    font-size: 0.8rem;
-    width: 200px;
+
+.heart {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.content  {
+    width: 100%;
+    font-weight: normal;
     background: #F3F3F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding: 5px;
+    padding-top: 10%;
+    
+    
+}
+
+.profile {
+    display: block;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-left:30%; 
+    margin-top: 25%;      
+}
+    
+.bat-bg {
+    background-image: url("../img/bati_fondo.png");
+}
+
+.wonder-bg {
+    background-image: url("../img/wonder_fondo.png");
+    
+}
+
+.super-bg {
+    background-image: url("../img/super_fondo.png");
+}
+
+.harley-bg {
+    background-image: url("../img/harley_fondo.png");
+}
+
+.content p {
+    padding: 1rem;
+    
+}
+
+.content span{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    line-height: 1.5rem;
+    margin-top: 15%;
+}
+
+.material-icons.blue {
+    font-size: 48px;
+    display: inline;
+    color: #00669F;  
+    margin-left: 85%;
+    position:absolute;
+    top: 300px;
+    position: fixed;
 }
