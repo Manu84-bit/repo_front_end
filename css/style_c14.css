@@ -11,13 +11,13 @@ html {
     margin: 0 auto;
 }
 header {
-    width: 410px;
+    max-width: 460px;
     padding-left: 2rem;
 
 }
 
 body {
-    width: 410px;
+    max-width: 460px;
     margin: 0 auto;
 }
 
