@@ -6,18 +6,38 @@
 }
 
 html {
-    font-size: 85%;
+    font-size: 75%;
     font-family: 'Roboto';
     margin: 0 auto;
 }
 header {
-    max-width: 460px;
-    padding-left: 2rem;
+    width: 100%;
+    margin-bottom: 1rem;
 
 }
 
+.orange-h {
+    background: #D1891C;
+    width: 100vw;
+    padding-left: 1.5rem;
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+}
+
+.blue-h {
+    width: 100vw;
+    padding-left: 1.5rem;
+    background: #00669F;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+    color: white;
+    font-size: 1.4rem;
+    font-weight: initial;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
 body {
-    max-width: 460px;
+    width:100%;
     margin: 0 auto;
 }
 
@@ -28,11 +48,12 @@ main {
 
 
 .card{
-    width: 290px;
+    width: 220px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin: 0 auto;
     border-radius: 27px 27px 0px 0px;
-    margin-bottom: 15%;
+    margin-bottom: 30%;
+    margin-top: 5%;
 
 
 }
@@ -41,36 +62,36 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 184px;
-    background-size: contain;
-    border-radius: 27px 27px 0px 0px;
+    height: 130px;
+    background-size: cover;
+    border-radius: 25px 25px 0px 0px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+    
    
 }
-
 
 .heart {
     margin-left: 5%;
     margin-top: 5%;
+    padding: 5px;
+    width: 30px;
+    height: 28px;
 }
 
 .content  {
     width: 100%;
     font-weight: normal;
-    background: #F3F3F3;
-    padding-top: 10%;
-    
-    
+    background: #F3F3F3; 
+    padding-bottom: 1rem;
 }
 
 .profile {
     display: block;
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    margin-left:30%; 
-    margin-top: 25%;      
+    width: 100px;
+    height: 100px;
+    margin-left:28%; 
+    margin-top: 18%;      
 }
     
 .bat-bg {
@@ -91,7 +112,11 @@ main {
 }
 
 .content p {
-    padding: 1.2rem;
+    padding-left:  1rem;
+    padding-right: 1.4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 85%;
     
 }
 
@@ -99,17 +124,57 @@ main {
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
-    line-height: 1.5rem;
-    margin-top: 15%;
+    line-height: 1rem;
+    padding-top:30%;
+    
+}
+
+.content button {
+    display: flex;
+    justify-content: center;
+}
+
+.button-v{
+    background: #00669F;
+    padding: 0.8rem 2.5rem 0.8rem 2.5rem;
+    margin-left:28%;
+    color: #F3F3F3;
+    font-size: 82%;
+    border-radius: 2px;
+    margin-bottom: 0.5rem;    
 }
 
 .material-icons.blue {
-    font-size: 48px;
+    font-size: 36px;
     display: inline;
     color: #00669F;  
-    margin-left: 85%;
+    margin-left: 98%;
     position: fixed;
     top: 260px;
-    right: 22px;
+    right: 4px;
+}
 
+.harley-c {
+    display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background: #00669F;
+    color:#F3F3F3;
+    padding: 1rem 0rem 1rem 0rem;
+    align-items: center;
+    
+}
+
+#rights {
+    font-size: 80%;
+    /* margin-left:5%; */
+}
+#git {
+    width:auto;
+    height: 12px;
+    position:absolute;
+    right:10px;
 }
