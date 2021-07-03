@@ -52,10 +52,8 @@ main {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin: 0 auto;
     border-radius: 27px 27px 0px 0px;
-    margin-bottom: 30%;
+    margin-bottom: 20%;
     margin-top: 5%;
-
-
 }
 
 .bg {
@@ -93,6 +91,9 @@ main {
     margin-left:28%; 
     margin-top: 18%;      
 }
+#sp2 {
+    display:none;
+}
     
 .bat-bg {
     background-image: url("../img/bati_fondo.png");
@@ -118,6 +119,9 @@ main {
     padding-bottom: 1rem;
     font-size: 85%;
     
+}
+#bati-p2{
+    display: none;
 }
 
 .content span{
@@ -165,7 +169,7 @@ footer {
     color:#F3F3F3;
     padding: 1rem 0rem 1rem 0rem;
     align-items: center;
-    
+    margin-top: 25%;
 }
 
 #rights {
@@ -178,3 +182,68 @@ footer {
     position:absolute;
     right:10px;
 }
+
+@media screen and (min-width: 768px) {
+
+    main {
+    width: 600px;
+    max-height: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    width: 220px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+    border-radius: 27px 27px 0px 0px;
+    margin-bottom: 5%;
+    margin-top: 7%;
+}
+
+    .harley-c {
+        display:block;
+    }
+    
+    #sp2 {
+        display:block;    
+    }
+
+    #sp {
+        display:none;
+    }
+
+    #bati-p1{
+        display: none;
+    }
+    
+    #bati-p2 {
+        display: block;
+    }
+
+
+    .material-icons.blue {
+        font-size: 56px;
+        display: inline;
+        color: #00669F;  
+        right:380px;
+        position: fixed;
+        top: 525px;
+    }
+
+    #rights {
+        font-size: 110%;
+        /* margin-left:5%; */
+    }
+    #git {
+        width:auto;
+        height: 25px;
+        position:absolute;
+        right:20px;
+    }
+
+}
+
