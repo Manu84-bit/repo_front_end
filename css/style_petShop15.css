@@ -55,7 +55,7 @@ body {
 
 }
 
-.material-icons {
+#H-menu {
     display: none;
 }
 
@@ -200,7 +200,7 @@ main {
         display: none;
     }
 
-    .material-icons {
+    #H-menu {
         display: block;
     }
     
