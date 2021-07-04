@@ -264,6 +264,12 @@ main {
         order:2;
     }
 
+    #footer1 {
+        padding-top: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+    }
     .suscribe {
         margin-left: 3px;
         position: relative;
@@ -279,8 +285,14 @@ main {
 
 @media (max-width:360px) {
    
+    #footer1 {
+        padding-top: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+    }
     #novedades {
-        font-size:12px;
+        font-size: 0.8rem;
         width: 100%;
     }
 }
