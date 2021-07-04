@@ -229,12 +229,12 @@ main {
         background: white;
         font-weight: normal;
         /* text-align: center; */
-        padding: 10px 30px 10px 30px;
+        padding: 10px 22px 10px 22px;
         border-radius: 5px;
-        max-width: 350px;
-        margin-left: 35%;
+        max-width: 450px;
+        margin-left: 7.5rem;
         margin-top:116px;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     h1 {
