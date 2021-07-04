@@ -232,7 +232,7 @@ main {
         padding: 10px 22px 10px 22px;
         border-radius: 5px;
         max-width: 450px;
-        margin-left: 7.5rem;
+        margin-left: 6rem;
         margin-top:116px;
         font-size: 1rem;
     }
@@ -264,4 +264,23 @@ main {
         order:2;
     }
 
+    .suscribe {
+        margin-left: 3px;
+        position: relative;
+        right: 40px;
+
+    }
+
+    #novedades {
+        font-size: 1rem;
+        width: 100%;
+    }
+}
+
+@media (max-width:360px) {
+   
+    #novedades {
+        font-size:12px;
+        width: 100%;
+    }
 }
