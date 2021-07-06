@@ -16,9 +16,9 @@ header {
 
 header .header1 {
     background:  #1CD1B0;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     padding-left: 1rem;
-    line-height: 1rem; 
+    line-height: 1.2rem; 
     font-weight: 400;
 }
 header .header2 {
@@ -93,7 +93,7 @@ footer {
     background:#00669F;
     color: #FFF9F9;
     font-family: 'Roboto';
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     text-align: center;
     padding:1rem;
 }
