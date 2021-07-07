@@ -18,20 +18,30 @@
         </div>
         <div class="header2">
             <img src="img/ecommerce_logo.png" alt="Logo ecommerce">
-            <span id="batiname">Batitienda</span>
+            <span id="batiname">La Batitienda</span>
         </div>
     </header>
     <main>
-        <h1>Registro</h1>
-        <form action="https://manu84-bit.github.io/repo_front_end/contacto.html" method="">
-            <input type="text" name="nombre" id="name_input" placeholder="Usuario">
+        <h1 id="register-title">Registro</h1>
+        <form id="r-form" action="https://manu84-bit.github.io/repo_front_end/contacto.html" method="">
+            <input type="text" name="nombre" id="name_input" placeholder="Nombre y Apellido">
+            <br>
+            <input type="email" name="pass" id="email_input" placeholder="Correo Electrónico">
             <br>
             <input type="password" name="pass" id="pass_input" placeholder="Contraseña">
             <br>
-            <button type="reset">Resetear</button>
-            <button type="submit">Registrar</button>
+            <select id="country" name="select">
+                <option value="value0">País</option>
+                <option value="value1">Argentina</option>
+                <option value="value2">Colombia</option>
+                <option value="value3">Venezuela</option>
+              </select>
+            <div class="pair">
+                <button type="reset" id="register-b">Resetear</button>
+                <button type="submit" id="reset-b">Registrar</button>
+            </div>
         </form>
-        <span>¿Ya tienes cuenta?<a href="index_ecommerce.html" target="_blank"> Ingresar</a></span>
+        <span class="question">¿Ya tienes cuenta?<a href="index_ecommerce.html" target="_blank"> Ingresar</a></span>
     </main>
     <footer>
         <span>Todos los derechos reservados a FRONT END 1</span>
