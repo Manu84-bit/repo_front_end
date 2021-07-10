@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
     <title>Añadir</title>
 </head>
@@ -40,6 +41,7 @@
                     <option value="0" disabled selected hidden>Especie</option>
                     <option value="1">Humano</option>
                     <option value="2">Alienígena</option>
+                    <option value="3">Filósofo</option>
                 </select>
 
                 <label for="date">Fecha</label>
@@ -47,26 +49,28 @@
                 <label for="carga"></label>
                 <input type="file" name="myImage" id="carga" accept="image/png, image/gif, image/jpeg"/>
 
-                <textarea name="request" id="request-ta" cols="35" rows="10" placeholder="Descripción"></textarea>
-                <p>Poderes</p>
-                <div>
-                <input type="checkbox" name="poderes" value="Volar" id="fly">
-                <label for="fly">Volar</label> <br>
-                <input type="checkbox" name="poderes" value="Superinteligencia" id="smart">
-                <label for="smart">Superinteligencia</label> <br>
-                <input type="checkbox" name="poderes" value="Vista rayo láser" id="laser">
-                <label for="laser">Vista de rayo láser</label><br>
-                <input type="checkbox" name="poderes" value="Billetera gorda" id="wallet">
-                <label for="wallet">Billetera gorda</label>
-                </div>
-                <hr>
-                <p>Tipo de personaje</p>
-                <div>
-                <input type="radio" name="character" id="char1">
-                <label for="char">Héroe/Heroina</label> 
-                <br>
-                <input type="radio" name="character" id="char2">
-                <label for="char2">Villano/Villana</label>
+                <textarea name="request" id="request-ta" cols="35" rows="5" placeholder="Descripción"></textarea>
+                <div class="custom">
+                    <div>
+                    <p>Poderes</p>
+                    <input type="checkbox" name="poderes" value="Volar" id="fly">
+                    <label for="fly">Volar</label> <br>
+                    <input type="checkbox" name="poderes" value="Superinteligencia" id="smart">
+                    <label for="smart">Superinteligencia</label> <br>
+                    <input type="checkbox" name="poderes" value="Vista rayo láser" id="laser">
+                    <label for="laser">Vista de rayo láser</label><br>
+                    <input type="checkbox" name="poderes" value="Billetera gorda" id="wallet">
+                    <label for="wallet">Billetera gorda</label>
+                    </div>
+                    <hr>
+                    <div>
+                    <p>Tipo de personaje</p>
+                    <input type="radio" name="character" id="char1">
+                    <label for="char">Héroe/Heroina</label> 
+                    <br>
+                    <input type="radio" name="character" id="char2">
+                    <label for="char2">Villano/Villana</label>
+                    </div>
                 </div>
                 <br>
                 <button type="submit">Añadir</button>
