@@ -399,6 +399,7 @@ main {
     width:12rem;
     border:0;
     margin-right: 0.3rem;
+   }
 }
 
 @media (max-width:360px) {
