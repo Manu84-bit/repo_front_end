@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#my-item {
+    background:yellow;
+    margin: 100px;
+    border-radius: 30%;
+    width: 100px;
+    height: 70px;  
+    
+}
+
+button {
+    background: blue;
+    color: white;
+    margin: 50px;
+    padding: 20px;
+    transition-property: background;
+    transition-duration: 1s;
+
+}
+
+
+button:hover {
+    background: red;
+    color: gray;
+}
+
+#my-item:hover {
+    transform: scale(2) rotate(-90deg);
+    transition-duration: 0.5s;
+    /* transform: rotate(45deg); */
+    animation: change_color 3s 0.5s 2, animate__bounce 2s;  
+
+}
+
+
+@keyframes change_color {
+    0% {
+        background: yellow;
+    }
+
+    25% {
+        background: orange;
+      
+    }
+
+    50% {
+        background-color:red;
+    }
+    100% {
+        background: black;
+    }
+
+}
