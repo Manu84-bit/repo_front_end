@@ -49,11 +49,12 @@ h1 {
     width:25rem;
     position: relative;
     margin-bottom: 2rem;
+    font-weight: 400;
   
 }
 
 h1::before {
-    content: "Be hap";
+    content: "Be Hap";
     background: $word-bg;
 
 }

@@ -76,10 +76,11 @@ h1 {
   width: 25rem;
   position: relative;
   margin-bottom: 2rem;
+  font-weight: 400;
 }
 
 h1::before {
-  content: "Be hap";
+  content: "Be Hap";
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #03faee), color-stop(60%, #03faee), color-stop(60%, transparent));
   background: linear-gradient(top, #03faee 0, #03faee 60%, transparent 60%);
 }
