@@ -1,0 +1,159 @@
+button {
+  background: #03faee;
+  border-radius: 5px;
+  border: 1.2px;
+  border-color: black;
+  border-style: dotted;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+header, header nav ul, main, section, footer, .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.card .circle, .icons .circle {
+  background: white;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+  width: 2.8rem;
+  height: 2.8rem;
+  text-align: center;
+  padding-top: 0.8rem;
+  margin-top: 0.8rem;
+  -webkit-box-shadow: -5px 0px 3px 0px #03faee;
+          box-shadow: -5px 0px 3px 0px #03faee;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  margin: 0;
+}
+
+body {
+  padding: 5rem 14rem 5rem 10rem;
+}
+
+header {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+header nav ul li {
+  padding-right: 2rem;
+}
+
+main {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+main img {
+  height: 450px;
+  width: auto;
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 55px;
+  line-height: 70px;
+  letter-spacing: 10px;
+  width: 25rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+h1::before {
+  content: "Be hap";
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #03faee), color-stop(60%, #03faee), color-stop(60%, transparent));
+  background: linear-gradient(top, #03faee 0, #03faee 60%, transparent 60%);
+}
+
+p, #ppal-p, pre {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#ppal-p {
+  line-height: 30px;
+  color: #8b8b8b;
+  padding-right: 3rem;
+}
+
+section {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8f8f8;
+  width: 20rem;
+  padding-left: 2rem;
+  padding-right: 3rem;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+}
+
+.card .circle {
+  border-width: 1.2px;
+  border-color: black;
+  margin-bottom: 1rem;
+  -webkit-transform: translate(-20px);
+          transform: translate(-20px);
+}
+
+#second-c {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+#find::before {
+  content: "Fi";
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #03faee), color-stop(60%, #03faee), color-stop(60%, transparent));
+  background: linear-gradient(top, #03faee 0, #03faee 60%, transparent 60%);
+}
+
+#message::before {
+  content: "Me";
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #03faee), color-stop(60%, #03faee), color-stop(60%, transparent));
+  background: linear-gradient(top, #03faee 0, #03faee 60%, transparent 60%);
+}
+
+#hire::before {
+  content: "Hi";
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #03faee), color-stop(60%, #03faee), color-stop(60%, transparent));
+  background: linear-gradient(top, #03faee 0, #03faee 60%, transparent 60%);
+}
+
+footer {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.icons .circle {
+  margin-left: 1.5rem;
+}
+
+.circle img {
+  color: black;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+/*# sourceMappingURL=style23.css.map */

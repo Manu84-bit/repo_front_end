@@ -1,0 +1,147 @@
+@import "_variables.scss";
+
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+}
+
+body {
+    padding: 5rem 14rem 5rem 10rem;
+}
+header {
+    font-family: $font-principal;
+    justify-content: space-between;
+    @extend %row-disposition;
+    padding-bottom: 2rem;
+     nav {
+         ul {
+            @extend %row-disposition;
+            li {
+                padding-right: 2rem;
+            }
+
+         }
+     }
+    
+}
+
+main {
+    @extend %row-disposition;
+    align-items: center;
+    margin-bottom: 2rem;
+
+
+    img {
+        height: 450px;
+        width: auto;
+        
+    }
+}
+
+
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 55px;
+    line-height: 70px;
+    letter-spacing: 10px;
+    width:25rem;
+    position: relative;
+    margin-bottom: 2rem;
+  
+}
+
+h1::before {
+    content: "Be hap";
+    background: $word-bg;
+
+}
+
+p, #ppal-p, pre {
+    font-family: $font-principal;
+}
+
+#ppal-p{
+    line-height: 30px;
+    color:$color-primary;
+    padding-right: 3rem;
+
+}
+button {
+    @extend %button-style;
+}
+
+
+section {
+    @extend %row-disposition;
+    justify-content: space-between;
+}
+
+.card {
+    font-family: $font-principal;
+    background: $bg-secondary;
+    width: 20rem;
+    padding-left: 2rem;
+    padding-right: 3rem;
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+
+}
+
+.card .circle {
+    @extend %circle-style;
+    border-width: 1.2px;
+    border-color: black;
+    margin-bottom: 1rem;
+    transform: translate(-20px);
+
+
+
+}
+
+#second-c {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#find::before {
+    content: "Fi";
+    background: $word-bg;
+}
+
+#message::before {
+    content: "Me";
+    background: $word-bg;
+}
+
+#hire::before {
+    content: "Hi";
+    background: $word-bg;
+}
+
+
+footer {
+    @extend %row-disposition;
+    justify-content: space-between;
+
+
+}
+
+.icons {
+    @extend %row-disposition;
+    
+
+    .circle {
+        @extend %circle-style;
+        margin-left: 1.5rem;
+    
+    }
+}
+
+
+.circle img {
+    color: black;
+    width: 1.2rem;
+    height: 1.2rem;
+}

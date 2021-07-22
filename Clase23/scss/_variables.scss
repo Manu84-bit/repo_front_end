@@ -1,0 +1,39 @@
+
+$bg-primary: #03faee;
+$bg-secondary: #f8f8f8;
+$color-primary: #8b8b8b;
+$word-bg: linear-gradient(top, $bg-primary 0, $bg-primary 60%, transparent 60%);
+
+%button-style {
+    background:$bg-primary;
+    border-radius: 5px;
+    border:1.2px;
+    border-color: black;
+    border-style: dotted;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+%row-disposition {
+    display: flex;
+    flex-direction: row;
+}
+
+$font-principal: Arial, Helvetica, sans-serif;
+
+%circle-style {
+    background:white;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    width: 2.8rem;
+    height: 2.8rem;
+    text-align: center;
+    padding-top: 0.8rem;
+    margin-top: 0.8rem;
+    box-shadow: -5px 0px 3px 0px $bg-primary;
+    
+
+
+}
