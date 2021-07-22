@@ -40,17 +40,8 @@ header, header nav ul, main, section, footer, .icons {
   margin: 0;
 }
 
-html {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 body {
-  padding: 5rem 25rem 5rem 25rem;
+  padding: 5rem 25rem 5rem 12rem;
 }
 
 header {
@@ -61,8 +52,13 @@ header {
   padding-bottom: 2rem;
 }
 
+header nav {
+  -webkit-transform: translate(100px);
+          transform: translate(100px);
+}
+
 header nav ul li {
-  padding-right: 2rem;
+  padding-right: 1.5rem;
 }
 
 main {
@@ -101,7 +97,7 @@ p, #ppal-p, pre {
 #ppal-p {
   line-height: 30px;
   color: #8b8b8b;
-  padding-right: 3rem;
+  padding-right: 1rem;
 }
 
 section {
@@ -155,6 +151,10 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.icons {
+  margin-left: 43rem;
 }
 
 .icons .circle {

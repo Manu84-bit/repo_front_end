@@ -5,12 +5,12 @@
     border: 0;
     margin: 0;
 }
-html {
-    display: flex;
-    justify-content: center;
-}
+// html {
+//     display: flex;
+//     justify-content: center;
+// }
 body {
-    padding: 5rem 25rem 5rem 25rem;
+    padding: 5rem 25rem 5rem 12rem;
 }
 header {
     font-family: $font-principal;
@@ -18,10 +18,12 @@ header {
     @extend %row-disposition;
     padding-bottom: 2rem;
      nav {
+        transform: translate(100px);
          ul {
             @extend %row-disposition;
+           
             li {
-                padding-right: 2rem;
+                padding-right: 1.5rem;
             }
 
          }
@@ -69,7 +71,7 @@ p, #ppal-p, pre {
 #ppal-p{
     line-height: 30px;
     color:$color-primary;
-    padding-right: 3rem;
+    padding-right: 1rem;
 
 }
 button {
@@ -134,7 +136,7 @@ footer {
 
 .icons {
     @extend %row-disposition;
-    
+    margin-left: 43rem;   
 
     .circle {
         @extend %circle-style;
