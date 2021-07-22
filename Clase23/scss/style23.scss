@@ -5,9 +5,12 @@
     border: 0;
     margin: 0;
 }
-
+html {
+    display: flex;
+    justify-content: center;
+}
 body {
-    padding: 5rem 14rem 5rem 10rem;
+    padding: 5rem 25rem 5rem 25rem;
 }
 header {
     font-family: $font-principal;
@@ -82,9 +85,9 @@ section {
 .card {
     font-family: $font-principal;
     background: $bg-secondary;
-    width: 20rem;
-    padding-left: 2rem;
-    padding-right: 3rem;
+    width: 18rem;
+    padding-left: 1.5rem;
+    padding-right: 4rem;
     padding-bottom: 5rem;
     margin-bottom: 5rem;
 
@@ -95,7 +98,7 @@ section {
     border-width: 1.2px;
     border-color: black;
     margin-bottom: 1rem;
-    transform: translate(-20px);
+    transform: translate(-10px);
 
 
 
