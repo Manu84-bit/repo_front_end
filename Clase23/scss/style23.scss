@@ -151,3 +151,15 @@ footer {
     width: 1.2rem;
     height: 1.2rem;
 }
+
+@media screen and (max-width:400px) {
+
+    html {
+    display: flex;
+    justify-content: start;
+}
+    body {
+        padding: 5rem 20rem 5rem 12rem;
+    }
+    
+}

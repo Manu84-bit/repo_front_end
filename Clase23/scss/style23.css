@@ -166,4 +166,18 @@ footer {
   width: 1.2rem;
   height: 1.2rem;
 }
+
+@media screen and (max-width: 400px) {
+  html {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  body {
+    padding: 5rem 20rem 5rem 12rem;
+  }
+}
 /*# sourceMappingURL=style23.css.map */
