@@ -18,7 +18,7 @@ header {
     @extend %row-disposition;
     padding-bottom: 2rem;
      nav {
-        transform: translate(100px);
+        transform: translate(150px);
          ul {
             @extend %row-disposition;
            
@@ -152,14 +152,18 @@ footer {
     height: 1.2rem;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:580px) {
 
     html {
     display: flex;
     justify-content: start;
 }
     body {
-        padding: 5rem 20rem 5rem 12rem;
+        padding: 5rem 25rem 5rem 12rem;
     }
     
+
+    nav {
+        padding-right: 8rem;
+    }
 }

@@ -53,8 +53,8 @@ header {
 }
 
 header nav {
-  -webkit-transform: translate(100px);
-          transform: translate(100px);
+  -webkit-transform: translate(150px);
+          transform: translate(150px);
 }
 
 header nav ul li {
@@ -167,7 +167,7 @@ footer {
   height: 1.2rem;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 580px) {
   html {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -177,7 +177,10 @@ footer {
             justify-content: start;
   }
   body {
-    padding: 5rem 20rem 5rem 12rem;
+    padding: 5rem 25rem 5rem 12rem;
+  }
+  nav {
+    padding-right: 8rem;
   }
 }
 /*# sourceMappingURL=style23.css.map */
