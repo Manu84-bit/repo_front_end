@@ -1,0 +1,36 @@
+@mixin form1 ($bg-brown: #3C2313){
+    background: $bg-brown;
+    font-family: 'Roboto';
+    color: white;
+    font-weight: bolder;
+    font-size: 70%;
+    border-radius: 15px;
+    padding: 0.6rem;
+    width:20rem;
+    margin: 0.3rem;
+}
+
+@mixin btn-style1 ($font-color: #FFFFFF) {
+    padding: 0.5rem;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    margin-top: 2rem;
+    width: 6rem;
+    border-radius: 15px;
+    border:0;
+    margin-bottom: 30px;
+}
+
+@mixin subscribe-btn ($font-color:white) {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    background: $bg-brown;
+    font-family: 'Roboto';
+    color: white;
+    font-weight: 400;
+    font-size: 70%;
+    border-radius: 16px;
+    border:0;
+}
