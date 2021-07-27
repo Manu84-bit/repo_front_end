@@ -1,0 +1,122 @@
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+
+
+.header{
+    display: flex;
+    padding-left: 10px;
+    justify-content: space-between;
+    padding: 13px 10px 13px 10px;
+    border-bottom: 0.4px solid rgba(34, 34, 34, 0.5);
+    box-sizing: border-box;
+    align-items: center;
+    
+}
+h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+.history {
+    margin: 25px 25px 25px 25px;
+    background: #FFFFFF;
+    border: 0.4px solid rgba(34, 34, 34, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 30px 20px 30px;
+}
+
+.post {
+    margin: 25px 25px 95px 25px;
+    background: #FFFFFF;
+    border: 0.4px solid rgba(34, 34, 34, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+    /* padding: 20px; */
+}
+
+
+
+.label {
+    display: flex;
+    padding: 13px 10px 13px 10px;
+    border-bottom: 0.4px solid rgba(34, 34, 34, 0.5);
+    box-sizing: border-box;
+    align-items: center;
+    width:100%;
+    margin: 0;
+    
+}
+
+.label span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    padding-left: 1rem;
+}
+.perfil-sm {
+    border-radius: 50%;
+}
+
+#more {
+   padding-left: 7rem;
+   font-size: 20px;
+}
+
+.post-content{
+    padding: 20px;
+}
+
+.perfil-lg {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.icons {
+    padding-top: 8px;
+    padding-right: 18px;
+}
+
+p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    padding-top: 10px;
+}
+
+#gray-f {
+   color: #A49B9B;
+}
+footer {
+    background: black;
+    color: white;  
+    text-align: center; 
+}
+
+
+#rights {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    line-height: 2.2rem;
+    letter-spacing: 0.5px;
+}
