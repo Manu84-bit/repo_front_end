@@ -153,7 +153,7 @@ footer {
 }
 
 
-@media (min-width: 768px){
+@media (min-width: 583px){
    
     body {
         background:#FAFAFA;
@@ -184,8 +184,8 @@ footer {
         border: 0.4px solid rgba(34, 34, 34, 0.5);
         border-radius: 5px;
         padding: 0.5rem;
-        width: 20rem;
-        margin-left: -24rem;
+        width: 22rem;
+        margin-left: -22rem;
     }
 
     .post, .history {
@@ -202,9 +202,16 @@ footer {
 
     .perfil-lg {
         max-width: 95%;
-        /* width: 488px;
-        height: 488px; */
     }
+    .label {
+        padding-right: 0;
+    }
+
+    #more {
+        padding-left: 12rem;
+        font-size: 25px;
+        margin-right: 0;
+     }
 
     aside {
         display: flex;
