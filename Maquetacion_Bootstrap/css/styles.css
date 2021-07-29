@@ -1,0 +1,79 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: white;
+    background: #6b4e71;
+    padding: 0.8rem;
+    font-size: 1.5rem;
+}
+
+button {
+    background: #c2b2b4;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-inline: 0.7rem;
+    padding-block: 0.5rem;
+
+}
+
+button span {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+
+}
+
+.main.row {
+    background: #c2b2b4;
+    font-family: 'Roboto';
+    color:white;
+
+}
+
+.main.row section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+}
+.main.row span {
+    font-size: 2rem;
+    font-weight: bolder;
+
+}
+
+.main.row p {
+    font-size: 1rem;
+    font-weight: 700;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card img{
+    width:80%;
+    display: flex;
+
+}
+/* button .material-icons {
+    width: 2px;
+    height: 2px;
+} */
