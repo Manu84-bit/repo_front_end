@@ -1,7 +1,7 @@
 let num1
 let num2 
-var num1Text
-var num2Text
+let num1Text
+let num2Text
 let resultText
 
 

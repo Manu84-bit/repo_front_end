@@ -75,6 +75,10 @@
 // console.log(myPoints)
 
 
+let skills = ["easy-lerner", "curious", "creative", "open-minded", "growth-minded", "natural born problem solver"]
+
+
+
 
 // ---------- End of Practice ---------------
 
