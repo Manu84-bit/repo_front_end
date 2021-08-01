@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    border:0;
+    padding: 0;
+    margin:0;
+}
+
+$color-primary: rgb(63, 63, 97); // variables
+
+html{
+    background:$color-primary;  //using variables
+    display: flex;
+    justify-content: center;
+}
+
+@mixin headers($background-color: gray){  //mixin is like a function, it can include a property variable
+    background: $background-color;                                    //as an argument with a default value (after the :)
+    font-family: 'Roboto';
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    @include headers();  //a mixin is called with the key word @include inside a selector.
+}
+
+%body-size{    //selector variable. It only works if it is extended inside a selector body.
+    background: black;
+    width:80vw;
+    padding: 20px;
+}
+
+body {
+    @extend %body-size;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    @extend main; //inherits the styles defined in the selector "main".
+    background: white;
+}
+
+

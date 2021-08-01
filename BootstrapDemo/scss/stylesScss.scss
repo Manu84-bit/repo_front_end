@@ -1,0 +1,48 @@
+@import "_variables.scss";
+
+* {
+ @extend %resetHTML;
+}
+
+
+header {
+    background: $color-header;
+    color: rgb(226, 225, 225);
+    font-family: 'Roboto';
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+article {
+    background: white;
+    font-family: 'Roboto';
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+aside {
+    background: $color-aside;
+    color:wheat;
+    font-family: 'Roboto';
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+p {
+    padding: 0.5rem;
+}
+
+.color-second {
+
+background:$color-secondary;
+}
+
+footer {
+    background: $color-footer;
+    color: rgb(226, 225, 225);
+    font-family: 'Roboto';
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}

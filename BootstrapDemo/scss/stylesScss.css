@@ -1,0 +1,47 @@
+* {
+  border: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+header {
+  background: #464444;
+  color: #e2e1e1;
+  font-family: 'Roboto';
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+article {
+  background: white;
+  font-family: 'Roboto';
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+aside {
+  background: #832525;
+  color: wheat;
+  font-family: 'Roboto';
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+p {
+  padding: 0.5rem;
+}
+
+.color-second {
+  background: #dada10;
+}
+
+footer {
+  background: #464444;
+  color: #e2e1e1;
+  font-family: 'Roboto';
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+/*# sourceMappingURL=stylesScss.css.map */
