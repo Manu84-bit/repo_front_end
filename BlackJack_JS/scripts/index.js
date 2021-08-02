@@ -6,13 +6,15 @@ let messageP = document.querySelector("#message-p") // same function as getEleme
 let sumP = document.getElementById("sum-p")
 let cardsP = document.getElementById("cards-p")
 let NewCardButton = document.getElementById("newCard-btn")
-let cards = []
-let nextCard = 2
+let cards;
+let nextCard;
 
 
 NewCardButton.style.display = "none"
 
 function startGame() {
+    nextCard = 2
+    cards = []
     for (let count = 0; count < 11; count++) {
         cards[count] = randomNat(1,11)
     }
@@ -26,7 +28,7 @@ function startGame() {
     cardsP.textContent += " " + cards[0] + " - " + cards[1]
     sumP.textContent += " " + sum
     
-   calculateResult(sum)
+    calculateResult(sum)
 
 }
 
@@ -35,8 +37,8 @@ function newCard() {
     sum += anotherCard
     cardsP.textContent += " - " + anotherCard
     sumP.textContent = "Sum: " + sum
-    calculateResult(sum)
     nextCard +=1
+    calculateResult(sum)
 }
 
 function calculateResult(sum) {
@@ -71,7 +73,6 @@ function randomNat(min, max) {
        return x
     
 }
-
 
 
 
