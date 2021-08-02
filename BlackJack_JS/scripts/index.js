@@ -1,4 +1,4 @@
-let firstCard, secondCard, thirdCard, sum
+let sum
 let hasBlackjack = false
 let isAlive = true
 let message = ""
@@ -6,19 +6,24 @@ let messageP = document.querySelector("#message-p") // same function as getEleme
 let sumP = document.getElementById("sum-p")
 let cardsP = document.getElementById("cards-p")
 let NewCardButton = document.getElementById("newCard-btn")
+let cards = []
+let nextCard = 2
 
 
 NewCardButton.style.display = "none"
 
 function startGame() {
-    
+    for (let count = 0; count < 11; count++) {
+        cards[count] = randomNat(1,11)
+    }
     sumP.textContent = "Sum: "
     cardsP.textContent ="Cards: "
-    firstCard = randomNat(1,11)
-    secondCard = randomNat(1,11)
-    sum = firstCard + secondCard
 
-    cardsP.textContent += " " + firstCard + " - " + secondCard
+    // cards[0] = randomNat(1,11)
+    // cards[1] = randomNat(1,11)
+    sum = cards[0] + cards[1]
+
+    cardsP.textContent += " " + cards[0] + " - " + cards[1]
     sumP.textContent += " " + sum
     
    calculateResult(sum)
@@ -26,13 +31,12 @@ function startGame() {
 }
 
 function newCard() {
-    anotherCard = randomNat(1,11)
+    let anotherCard = cards[nextCard]
     sum += anotherCard
     cardsP.textContent += " - " + anotherCard
     sumP.textContent = "Sum: " + sum
-    
     calculateResult(sum)
-
+    nextCard +=1
 }
 
 function calculateResult(sum) {
@@ -56,7 +60,7 @@ function calculateResult(sum) {
 
 function randomInt(min, max) { // In JS it is not neccesary to specify the data type of the return value.
     return Math.round(Math.random()*(max- min) + min)  // Math.random() gives a number between 0 inclusive and 1 exclusive.
-}                                                     // Math.floor gives the integer part of a float number.
+}                                                     // Math.round gives the integer part of a float number.
 
 
 function randomNat(min, max) {
