@@ -8,10 +8,25 @@ let cardsP = document.getElementById("cards-p")
 let NewCardButton = document.getElementById("newCard-btn")
 let playerEl = document.getElementById("player-el")
 let cards = []; //to asign points to the game
-let nextCard;
+let nextIndex;
 
 
 
+
+// Creation of the deck that represents the cards with suits and ranks
+
+let suits = ['S','H','C','D']
+let ranks = [1,2,3,4,5,6,7,8,9,10,11,12,13]
+
+let deck = []
+
+for (let i = 0; i < suits.length; i++){
+    for (let j = 0; j < ranks.length; j++) {
+        let card = [suits[i], ranks[j]];
+        deck.push(card);
+
+    }
+}
 
 
 
@@ -19,38 +34,91 @@ let nextCard;
 NewCardButton.style.display = "none"
 
 function startGame() {
-    nextCard = 2
-
+    nextIndex = 2
     //this function has to shuffle the array with the total card deck. The card deck is a 
-    //bidimensional array of the form  deck = [[suit_symbol1, value1], ...] , where "suit_symbol1" is an id for an
+    //bidimensional array of the form  deck = [[suit,rank], ...] , where the [suit, rank] element is used to call an
     //image that represents a particular card and that has to be recovered from the img folder.  
-    //"value1" is the value assigned to the particular card recovered that has to be added to the sum variable.
+    //"rank" is the value assigned to the particular card recovered that has to be added to the sum variable once the 11,12 and 13 values are 
+    //converted to 10.
 
-
-    for (let count = 0; count < 11; count++) {
-        cards[count] = randomInt(1,11)
-    }
+    shuffleArray(deck)
+  
     sumP.textContent = "Sum: "
     cardsP.textContent ="Cards: "
-    sum = cards[0] + cards[1]
+    cardsP.textContent += " " + deck[0] + " - " + deck[1]
 
-    cardsP.textContent += " " + cards[0] + " - " + cards[1]
+    // change values if ranks are J, Q or K to be equals to 10
+    let card1 = deck[0][1]
+    let card2 = deck[1][1]
+    if (card1 > 10) {
+        card1 = 10
+    }
+
+    if (card2 > 10) {
+        card2 = 10
+    }
+
+   
+    //advice if ace are present
+
+    // if (card1 === 1) {
+    //     card1 = parseInt(prompt("Insert a possible value for your ace (1 or 11): "), 10)
+    // }
+
+    // if (card2 === 1) {
+    //     card2 = parseInt(prompt("Insert a possible value for your ace (1 or 11): "),10)
+    // }
+
+    sum = card1 + card2
+
+
     sumP.textContent += " " + sum
-    
-    //playerEl.textContent = player.name + " you have " + player.credits + " credits"
-
     calculateResult(sum)
 
+
+    //FIRTS VERSION WITHOUT THE DECK ARRAY
+
+    // for (let count = 0; count < 11; count++) {
+    //     cards[count] = randomInt(1,11)
+    // }
+    // sumP.textContent = "Sum: "
+    // cardsP.textContent ="Cards: "
+    // sum = cards[0] + cards[1]
+
+    // cardsP.textContent += " " + cards[0] + " - " + cards[1]
+    // sumP.textContent += " " + sum
+    
+    // //playerEl.textContent = player.name + " you have " + player.credits + " credits"
+
+    // calculateResult(sum)
+
 }
+
 
 function newCard() {
-    let anotherCard = cards[nextCard]
-    sum += anotherCard
-    cardsP.textContent += " - " + anotherCard
-    sumP.textContent = "Sum: " + sum
-    nextCard +=1
+
+    let newCard = deck[nextIndex][1]
+    if (newCard > 10) {
+        newCard = 10
+    }
+
+    sum += newCard;
+    cardsP.textContent += " - " + deck[nextIndex];
+    sumP.textContent = "Sum: " + sum;
+    nextIndex ++
     calculateResult(sum)
+
+    //First version without deck array
+    // let anotherCard = cards[nextCard]
+    // sum += anotherCard
+    // cardsP.textContent += " - " + anotherCard
+    // sumP.textContent = "Sum: " + sum
+    // nextCard +=1
+    // calculateResult(sum)
 }
+
+
+
 
 function calculateResult(sum) {
     if (sum < 21){
