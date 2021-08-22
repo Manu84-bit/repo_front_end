@@ -67,7 +67,7 @@ function startGame() {
 
     // if (card2 === 1) {
     //     card2 = parseInt(prompt("Insert a possible value for your ace (1 or 11): "),10)
-    // }
+    //}
 
     sum = card1 + card2
 
