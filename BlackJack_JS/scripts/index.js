@@ -6,28 +6,39 @@ let messageP = document.querySelector("#message-p") // same function as getEleme
 let sumP = document.getElementById("sum-p")
 let cardsP = document.getElementById("cards-p")
 let NewCardButton = document.getElementById("newCard-btn")
-let cards;
+let playerEl = document.getElementById("player-el")
+let cards = []; //to asign points to the game
 let nextCard;
+
+
+
+
+
 
 
 NewCardButton.style.display = "none"
 
 function startGame() {
     nextCard = 2
-    cards = []
+
+    //this function has to shuffle the array with the total card deck. The card deck is a 
+    //bidimensional array of the form  deck = [[suit_symbol1, value1], ...] , where "suit_symbol1" is an id for an
+    //image that represents a particular card and that has to be recovered from the img folder.  
+    //"value1" is the value assigned to the particular card recovered that has to be added to the sum variable.
+
+
     for (let count = 0; count < 11; count++) {
-        cards[count] = randomNat(1,11)
+        cards[count] = randomInt(1,11)
     }
     sumP.textContent = "Sum: "
     cardsP.textContent ="Cards: "
-
-    // cards[0] = randomNat(1,11)
-    // cards[1] = randomNat(1,11)
     sum = cards[0] + cards[1]
 
     cardsP.textContent += " " + cards[0] + " - " + cards[1]
     sumP.textContent += " " + sum
     
+    //playerEl.textContent = player.name + " you have " + player.credits + " credits"
+
     calculateResult(sum)
 
 }
@@ -46,7 +57,7 @@ function calculateResult(sum) {
         message = "Do you want another card?"
         messageP.textContent = message
         NewCardButton.style.display = "inline"
-    } else if (sum === 21) {  //in JS the strcit equal sign is marked with three ""="", just two equal signs, "==", ignores the data type.
+    } else if (sum === 21) {  //in JS the strcit equal sign is marked with three equal signs "===", two equal signs "==" ignore the data type.
         hasBlackjack = true
         message = "Wohoo! You got a Blackjack!"
         messageP.textContent = message
@@ -61,18 +72,18 @@ function calculateResult(sum) {
 }
 
 function randomInt(min, max) { // In JS it is not neccesary to specify the data type of the return value.
-    return Math.round(Math.random()*(max- min) + min)  // Math.random() gives a number between 0 inclusive and 1 exclusive.
+    return Math.round(Math.random()*(max - min) + min)  // Math.random() gives a number between 0 inclusive and 1 exclusive.
 }                                                     // Math.round gives the integer part of a float number.
 
 
-function randomNat(min, max) {
-    let x = randomInt (min,max)
-    if (x < 0) {
-       return x *-1
-   } else 
-       return x
-    
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) { // loop que va del mayor índice del array hasta el primero (o sea, 0).
+        let j = Math.floor(Math.random() * (i + 1)); // j es un índice al azar entre 0 y el mayor índice en la primera corrida, luego el indice anteiror al mayor y así sucesivamente.
+        let temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+   
+    return array;
 }
-
-
 
