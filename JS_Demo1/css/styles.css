@@ -17,7 +17,7 @@ header {
     flex-direction: column;
     background: rgb(48, 46, 46);
     width: 330px;
-    height: 330px;
+    height: 450px;
     justify-content: center;
     align-items: center;
 }
@@ -40,7 +40,7 @@ button {
     background: rgb(126, 10, 10);
 }
 
-#reset-btn {
+#reset-btn, #buy-btn {
     background: yellow;
     color: black;
 }
