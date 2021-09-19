@@ -2,6 +2,9 @@
     "manifest_version": 3,
     "version": "1.1.1",
     "name": "Leads Trackerv",
+    "permissions": [
+        "tabs"
+     ],
     "action": {
         "default_popup": "index.html",
         "default_icon":"icon.png"

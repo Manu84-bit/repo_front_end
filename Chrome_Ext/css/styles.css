@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-color: #5f9341;
+  }
+
 body {
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -14,9 +18,9 @@ body {
 
 #input-el {
     border-width: 1px;
-    border: solid #5f9341;
+    border: solid var(--main-color);
     height: 2rem;
-    width: 80%;
+    width: 85%;
     padding-left: 10px;
 }
 
@@ -27,14 +31,28 @@ body {
     font-weight: bold;
 }
 
+.buttons {
+    display: flex;
+}
+
 button {
     margin-top: 10px;
     width: 8rem;
     height: 2rem;
-    color: white;
-    background-color: #5f9341;
     font-weight: bold;
 }
+
+#input-btn, #tab-btn {
+    color: white;
+    background-color: var(--main-color);
+}
+
+#delete-btn {
+    color:var(--main-color);
+    background-color: white;
+    border: solid var(--main-color);
+}
+
 
 #leadsUl {
     margin-top: 1rem;
@@ -48,5 +66,5 @@ li {
 }
 
 li a {
-    color: #5f9341;
+    color: var(--main-color);
 }
